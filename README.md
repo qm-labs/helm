@@ -1,3 +1,14 @@
+# QM patch - 3.6.3-qm
+
+This version is based on v3.6.3 with the following PR merged, to support `--max-col-width`:
+https://github.com/helm/helm/pull/9681
+
+```
+git checkout v3.6.3
+git cherry-pick -m 1 599c071ac730cf5be1fbcd09a6d24572f59d90ea
+make cross-build
+```
+
 # Helm
 
 [![CircleCI](https://circleci.com/gh/helm/helm.svg?style=shield)](https://circleci.com/gh/helm/helm)
